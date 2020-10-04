@@ -1,0 +1,211 @@
+/* for entire webiste initialy set the margin and padding*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+
+                         /* "HOME PAGE CSS" */
+
+/* NAVBAR */
+nav{
+  font-family: WebMD;
+  background-color: #023c76;
+  opacity: 0.8;
+  }
+nav a {
+  font-size: 1.5rem;
+}
+/* navbar hover effect */
+.nav-link:hover{
+  border-bottom: 5px solid rgba(200, 230, 200,0.3)
+}
+/* navbar logo */
+nav .logo{
+  font-size: 4rem;
+  font-family: 'Open Sans', sans-serif;
+}
+span{
+  color: aqua;
+}
+/* set the slider carousel img */
+.carousel-inner img {
+  width: auto;
+  height: 100vh;
+}
+
+/* corona structure section */
+.strucute {
+  background-color:rgb(183, 218, 132);
+  opacity: 0.7;
+  display: flex;
+  flex-direction: row;
+}
+
+/* MoveUpDown is a keyFrames that define the position*/
+.animatediv {
+  animation: MoveUpDown 15s linear infinite;
+  position: absolute;
+  right: 1rem
+}
+/* position of corona animation */
+@keyframes MoveUpDown {
+  0%,100% {
+    top: 0px;
+  }
+  50% {
+    top: 150px;
+  }
+}
+.heading_text{
+    /* border: 2px solid red;  */
+  display:block;
+  position: absolute;
+  top: 19rem;
+  left: 1rem;
+  text-shadow: 4px 4px 5px rgb(108, 29, 172);
+  box-shadow: 0px 8px 10px rgb(108, 29, 172);
+  }
+.sublogo{
+  font-family: 'Open Sans', sans-serif;
+  border-bottom: 3px solid rgb(9, 5, 14);
+  width: 80px;
+  font-size: 4rem;
+  color:#023c76;
+   text-shadow: 3px 3px 5px rgb(108, 29, 172);
+   transform: rotate(0);
+   transition: ease-in-out;
+   transition-duration: 5s;
+   border-top:3rem;
+}
+.sublogo:hover{
+  font-size: 5em;
+  transform: rotateX(45);
+
+}
+
+.subhead{
+  font-size:1rem ;color: rgba(2, 2, 2);
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+                          /* "TESTING Page CSS" */
+header img {
+  width: 100%;
+  height: 70vh;
+  opacity: 0.9;
+}
+/* Heading Tags */
+h1,h2,h3 {
+  font-family: WebMD;
+  background-color: #023c76;
+  opacity: 0.7;
+  color: seashell;
+  text-align: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#phases{
+  background-color: rgb(176, 236, 208);
+  text-align: center;
+  padding: 10px;
+}
+
+
+                            /* "About Page CSS" */
+
+.section {
+  text-align: center;
+  padding-top: 60px;
+}
+/* background image */
+.member::before {
+  content: "";
+  background: url(/img/_pic1.jpeg) no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+/* hover effect */
+.team-member:hover {
+  transform: translate(5px, 5px);
+}
+.team-member img {
+  margin-bottom: 5px;
+  border-radius: 25%;
+}
+.team-member a {
+  color: whitesmoke;
+  content: "";
+  padding-bottom: 5px;
+}
+
+                           /* "PRECAUTION PAGE CSS"  */
+/* SUB-HEADING TEXT */
+ .para{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: aliceblue;
+    font-size: 1.5rem;
+    text-shadow: 5px 5px 2px rgb(168, 168, 165);
+}
+/* SET MAIN CONTAINER */
+.main_container {
+  width: 80%;
+  height: 70vh;
+  margin: auto;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.precaution-header::before {
+  content: "";
+  background: url(/img/back.jpg) no-repeat
+    center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 115vh;
+  z-index: -1;
+  opacity: 0.7;
+}
+/* ALL BOXES SET UP */
+.box {
+  width: 30%;
+  height: 70vh;
+  border-top: 2px solid rgba(0, 0, 0, 0.671);
+  margin: 2rem 1rem;
+  padding: 10px;
+  /* overflow: hidden; */
+}
+.main_img{
+  width: 80%;
+  height: 50vh;
+  border-radius: 25%;
+  margin-top: 10px;
+}
+
+  /* footer */
+footer{
+  background-color: lightslategrey;
+  text-align: center;
+  display: inline-block;
+ }
+  .icon a i{
+    font-size: 5rem;
+    padding: 10px;
+    margin: 5px;
+  }

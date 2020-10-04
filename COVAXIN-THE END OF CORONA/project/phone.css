@@ -1,0 +1,55 @@
+ 
+/* media query */
+
+                         
+
+ @media screen and (max-width: 1000px)
+		{ 
+                          /* HOME PAGE */
+    
+   /*  sub logo and sub heading media query     */
+   .text{ display:block;
+    position: absolute;
+   top: 20rem;
+   left: 1rem;
+   text-shadow: 3px 3px 5px rgb(108, 29, 172);
+    box-shadow: 3px 3px 5px rgb(108, 29, 172);
+}
+.sublogo:hover{
+font-size: 4em;
+transform: rotateX(0);
+}
+      
+
+  
+  
+                          /* ABOUT PAGE */
+
+  /* read more button set padding due to responsiveness  */
+  .btn{
+    margin-bottom: 20px;
+  }
+                       
+                          /* PRECAUTION PAGE */
+
+ .main_container .box{width: auto;
+   height: auto;
+    margin: 5px;
+    padding: 5px;
+     background-color: aliceblue;
+   }
+   .box img{
+      width: 360px;
+   } 
+                             
+  /* footer */
+
+   footer{    background-color: lightslategrey;
+    text-align: center;
+   }
+    .icon i{
+      font-size: 3rem;
+      padding: 7px;
+      margin: 3px;
+    }
+} 
